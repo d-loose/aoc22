@@ -22,7 +22,7 @@ func getInput(name string) (string, error) {
 }
 
 func main() {
-	days := []Day{solutions.Day01{}}
+	days := []Day{solutions.Day01{}, solutions.Day02{}}
 	for _, day := range days {
 		input, err := getInput(day.Name())
 
