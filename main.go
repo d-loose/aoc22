@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	days := []utils.Day{solutions.Day01{}, solutions.Day02{}}
+	days := []utils.Day{solutions.Day01{}, solutions.Day02{}, solutions.Day03{}}
 	for _, day := range days {
 		input, err := utils.GetInput(day.Name())
 
