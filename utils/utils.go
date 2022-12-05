@@ -24,7 +24,7 @@ func GetInput(name string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return strings.TrimSpace(string(input)), nil
+	return strings.TrimRight(string(input), "\n"), nil
 }
 
 func RunTests(t *testing.T, day Day, testCases []TestCase) {
